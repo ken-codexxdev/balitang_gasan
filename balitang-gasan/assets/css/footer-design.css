@@ -1,0 +1,250 @@
+/* kulang pa ito, wag muna ilink sa footer */
+
+*, *::before, *::after { 
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text);
+  background: var(--bg-light);
+  line-height: 1.7;
+}
+
+img { max-width: 100%; }
+
+a { 
+  color: inherit; 
+  text-decoration: none; 
+}
+a:hover { color: var(--red); }
+
+
+
+/* ── NEWSLETTER SECTION ──────────────────────── */
+.newsletter-section {
+  background: var(--dark-3);
+  color: #fff;
+  padding: 48px 0;
+}
+.newsletter-title { 
+  font-family: var(--font-head); 
+  font-size: 1.8rem; 
+  font-weight: 700; 
+  margin-bottom: 8px; 
+}
+.newsletter-sub { 
+  font-family: var(--font-ui); 
+  font-size: 14px; 
+  color: rgba(255,255,255,.7); 
+  margin-bottom: 20px; 
+}
+.newsletter-form .form-control {
+  border: none;
+  border-radius: 4px 0 0 4px;
+  padding: 12px 16px;
+  font-family: var(--font-ui);
+}
+.btn-subscribe {
+  background: var(--red);
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding: 12px 20px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.btn-subscribe:hover { 
+  background: var(--red-dark); 
+  color: #fff; 
+}
+
+/* ── SOCIAL SECTION ──────────────────────────── */
+.social-section {
+  background: var(--dark-2);
+  padding: 40px 0;
+}
+.social-title {
+  font-family: var(--font-head);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.social-icons { 
+  display: flex; 
+  justify-content: center; 
+  gap: 16px; 
+  flex-wrap: wrap; 
+}
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff !important;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity .2s, transform .2s;
+  text-decoration: none;
+}
+.social-btn:hover { 
+  opacity: .85; 
+  transform: translateY(-2px); 
+}
+.social-btn.facebook  { 
+  background: #1877f2; 
+}
+.social-btn.instagram { 
+  background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); 
+}
+.social-btn.twitter   { 
+  background: #000; 
+}
+.social-btn.youtube   { 
+  background: #ff0000; 
+}
+
+
+
+/* ── MAIN FOOTER ─────────────────────────────── */
+.main-footer { 
+  background: var(--dark); 
+  color: #aaa; 
+}
+
+.footer-brand { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.footer-brand-icon { 
+    font-size: 28px; 
+    color: var(--red); 
+}
+
+.footer-brand-name { 
+    font-family: var(--font-head); 
+    font-size: 20px; 
+    font-weight: 800; 
+    color: #fff; 
+    line-height: 1; 
+}
+
+.footer-brand-name span { 
+    color: var(--red); 
+}
+
+.footer-brand-tagline { 
+    font-family: var(--font-ui); 
+    font-size: 9.5px; 
+    color: #777; 
+    text-transform: uppercase; 
+    letter-spacing: .08em; 
+    padding-top: 3px;
+}
+
+.footer-about { 
+    font-family: var(--font-ui); 
+    font-size: 13px; 
+    line-height: 1.6; 
+    color: #888; 
+    margin-top: 10px; 
+}
+
+.footer-social-mini { 
+    display: flex; 
+    gap: 10px; 
+    margin-top: 12px; 
+}
+
+.footer-social-mini a { 
+    color: #888; 
+    font-size: 16px; 
+    transition: color .2s; 
+}
+
+.footer-social-mini a:hover { 
+    color: var(--red); 
+}
+
+.footer-heading { 
+    font-family: var(--font-ui); 
+    font-size: 11px; 
+    text-transform: uppercase; 
+    letter-spacing: .1em; 
+    color: #fff; 
+    border-bottom: 1px solid #333; 
+    padding-bottom: 8px; 
+    margin-bottom: 12px; 
+}
+
+.footer-links { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.footer-links li { 
+    padding: 4px 0; 
+}
+
+.footer-links a { 
+    font-family: var(--font-ui); 
+    font-size: 13px; 
+    color: #888; 
+    transition: color .2s; 
+}
+
+.footer-links a:hover { 
+    color: var(--red); 
+}
+
+.footer-links.two-col { 
+    column-count: 2; 
+    column-gap: 10px; 
+}
+
+.footer-news-item { 
+    padding: 8px 0; 
+    border-bottom: 1px solid #2a2a2a; 
+}
+
+.footer-news-item:last-child { 
+    border-bottom: none; 
+}
+
+.footer-news-item a { 
+    font-family: var(--font-ui); 
+    font-size: 13px; 
+    color: #aaa; 
+    display: block; 
+    line-height: 1.4; 
+    margin-bottom: 3px; 
+}
+
+.footer-news-item a:hover { 
+    color: var(--red); 
+}
+
+.footer-news-date { 
+    font-size: 11px; 
+    color: #666; 
+}
+
+.footer-bottom { 
+    border-top: 1px solid #2a2a2a; 
+    padding: 16px 0; 
+    display: flex; 
+    justify-content: space-between; 
+    font-family: var(--font-ui); 
+    font-size: 12px; 
+    color: #666; 
+    flex-wrap: wrap; 
+    gap: 8px; 
+}

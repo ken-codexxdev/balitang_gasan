@@ -1,0 +1,110 @@
+/* ── TOP BAR ─────────────────────────────────── */
+.topbar {
+  background: var(--dark);
+  color: #ccc;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  padding: 6px 0;
+  border-bottom: 2px solid var(--red);
+}
+.topbar a {
+  color: #ccc;
+  margin-left: 14px;
+  transition: color .2s;
+}
+.topbar a:hover { color: var(--red-light); }
+.topbar-date { letter-spacing: .03em; }
+.topbar-right { display: flex; align-items: center; }
+
+/* ── MAIN HEADER ─────────────────────────────── */
+.main-header {
+  background: var(--bg-white);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+.brand-link:hover .brand-name { 
+  color: var(--red); 
+}
+.brand-logo { 
+  display: flex; align-items: 
+  center; gap: 12px; 
+}
+.brand-icon {
+  font-size: 38px;
+  color: var(--red);
+  line-height: 1;
+}
+.brand-name {
+  font-family: var(--font-head);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -0.5px;
+  line-height: 1;
+  transition: color .2s;
+}
+.brand-name span { color: var(--red); }
+.brand-tagline {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* Search */
+.search-form { gap: 0; width: 280px; }
+.search-input {
+  border: 2px solid var(--border);
+  border-right: none;
+  border-radius: 4px 0 0 4px !important;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  padding: 8px 14px;
+}
+.search-input:focus {
+  border-color: var(--red);
+  box-shadow: none;
+}
+.btn-search {
+  background: var(--red);
+  color: #fff;
+  border-radius: 0 4px 4px 0 !important;
+  padding: 8px 16px;
+  border: 2px solid var(--red);
+}
+.btn-search:hover { 
+  background: var(--red-dark); 
+  border-color: var(--red-dark); 
+  color: #fff; 
+}
+
+/* ── NAVIGATION ──────────────────────────────── */
+.main-nav {
+  background: var(--dark);
+  padding: 0;
+}
+.main-nav .navbar-nav {
+  flex-wrap: wrap;
+}
+.main-nav .nav-link {
+  color: #ddd !important;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  padding: 14px 16px !important;
+  border-bottom: 3px solid transparent;
+  transition: all .2s;
+}
+.main-nav .nav-link:hover, .main-nav .nav-link.active {
+  color: #fff !important;
+  border-bottom-color: var(--red);
+  background: rgba(255,255,255,.05);
+}
+.navbar-toggler { 
+  border: none; 
+  box-shadow: none; 
+}
